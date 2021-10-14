@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Havana Club</title>
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat&display=swap"
       rel="stylesheet"
@@ -33,33 +35,35 @@
           <a href="#" class="openBtn"><i class="fas fa-bars neon-effectTxt_blue"></i
             ></a>
       </header>
-      <nav class="side_menu">
+      <div class="side_menu">
         <div class="user_zone">
           <a href="#" class="pink_btn neon-effectBox_pink  neon-effectTxt_pink">Sign Up</a>
           <a href="#" class="pinkBlack_btn neon-effectBoxShineOff_pink">Sign In</a>
           <a href="#" class="close_btn pink_btn neon-effectTxt_pink"><i class="fas fa-times"></i></a>
         </div>
-        <div class="list">
-            <h3>
+        <nav class="list">
+          <ul>
+            <li>
               <a href="./bookingPage.html" class="neon-effectTxt_blue">BOOKING</a>
-            </h3>
-            <h3>
+            </li>
+            <li>
               <a href="./preOrder.HTML" class="neon-effectTxt_blue">PRE-ORDER</a>
-            </h3>
-            <h3>
+            </li>
+            <li>
               <a href="./contactUs.HTML" class="neon-effectTxt_blue">CONTACT-US</a>
-            </h3>
-            <h3>
+            </li>
+            <li>
               <a href="./menuPage.HTML" class="neon-effectTxt_blue">MENU</a>
-            </h3>
-            <h3>
+            </li>
+            <li>
               <a href="#" class="neon-effectTxt_blue">WHAT'S ON</a>
-            </h3>
-            <h3>
+            </li>
+            <li>
               <a href="./aboutUs.HTML" class="neon-effectTxt_blue">ABOUT-US</a>
-            </h3>
-        </div>
-      </nav>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="banner_section">
         <div class="container">
           <h2 class="neon-effectTxt_blue"> Welcome</h2>
@@ -85,16 +89,22 @@
               <h2 class="neon-effectTxt_blue">MENU</h2>
             </div>
             <div class="slider_zone">
-              <button class="btn_arrow pink_btn neon-effectTxt_pink"><</button>
-              <img src="./picLibrary/CHIN-CHIN-2017-4329.jpg" alt="" />
-              <p>
-                We don’t just make (admittedly, amazing) food, we make a
-                statement. The dining, music and art scenes converge at Chin
-                Chin and we’re an instigator in them, never a spectator. We
-                elevate what inspires us and those around us, exposing you to a
-                new experience with every visit.
-              </p>
-              <button class="btn_arrow pink_btn neon-effectTxt_pink">></button>
+              <div class="container"> 
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="item"><h4>2</h4>
+                    </div>
+                    <img src="./picLibrary/CHIN-CHIN-2017-4329.jpg" alt="">
+                    
+                  </div>
+                  <div class="item"><h4>2</h4>
+                  <img src="./picLibrary/chin1-800x600.jpg" alt="">
+                  </div>
+                  <div class="item"><h4>3</h4>
+                    <img src="./picLibrary/dj-background-image.jpg" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
             <button
               class="more_btn pink_btn neon-effectBox_pink neon-effectTxt_pink"
@@ -181,6 +191,9 @@
        </div>
       </section>
     </footer>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 
    <script src="./havana.js"></script>
   </body>
