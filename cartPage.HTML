@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./cartPage.CSS">
+    <script
+      src="https://kit.fontawesome.com/8470264036.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="wrap">
+        <nav>
+            <div class="icon">
+              <i class="fas fa-map-marker-alt neon-effectTxt_blue"></i>
+              <select name="location" id="location">
+                <option value="Sydney">Sydney</option>
+                <option value="Melbourne">Melbourne</option>
+              </select>
+            </div>
+            <div class="logo_area">
+              <img src="./picLibrary/havanaclubXL.png" alt="" />
+            </div>
+            <div class="menu">
+              <a href="#" class="openBtn"><i class="fas fa-bars neon-effectTxt_blue"></i
+                ></a>
+          </nav>
+          <div class="side_menu">
+            <div class="user_zone">
+              <a href="#" class="pink_btn neon-effectBox_pink  neon-effectTxt_pink">Sign Up</a>
+              <a href="#" class="pinkBlack_btn neon-effectBoxShineOff_pink">Sign In</a>
+              <a href="#" class="close_btn pink_btn neon-effectTxt_pink"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="list">
+              <a href="./index.html" class="neon-effectTxt_blue">HOME</a>
+              <a href="./bookingPage.html" class="neon-effectTxt_blue">BOOKING</a>
+              <a href="./contactUs.HTML" class="neon-effectTxt_blue">CONTACT-US</a>
+              <a href="./menuPage.HTML" class="neon-effectTxt_blue">MENU</a>
+              <a href="#" class="neon-effectTxt_blue">WHAT'S ON</a>
+              <a href="./aboutUs.HTML" class="neon-effectTxt_blue">ABOUT-US</a>
+            </div>
+          </div>
+            <section class="cart_section">
+              <div class="container">
+                <h1 class="neon-effectTxt_blue">My Cart</h1>
+                <a class=" moreItem_link pink_btn   neon-effectTxt_pink" href="./preOrder.HTML"> <i class="fas fa-arrow-left"></i> Add more Items</a>
+                <div class="order_area">
+                  <div class="order_list">
+                    <form action="">
+                      <table>
+                      <thead class='head'>
+                        <tr>
+                          <th class="product_name">
+                            PRODUCT</th>
+                          <th class="product_price">PRICE</th>
+                          <th class="product_quantity">QUANTITY</th>
+                          <th class="product_total">TOTAL</th>
+                        </tr>
+                        <tbody>
+                          <tr>
+                            <td class="product_name">
+                              <a href="">x</a>
+                              Thai Pork Sausage Roll
+                            </td>
+                            <td class="product_price">$39.00</td>
+                            <td class="product_quantity"><input type="number" min="0" step="1" value="1"></td>
+                            <td class="product_total">$39.00</td>
+                          </tr>
+                          <tr>
+                            <td class="product_name">
+                              <a href="">x</a>
+                              Stir Fried Prawn
+                            </td>
+                            <td class="product_price">$29.50</td>
+                            <td class="product_quantity"><input type="number" min="0" step="1" value="1""></td>
+                            <td class="product_total">$29.50</td>
+                          </tr>
+                          <tr class="action">
+                            <td>
+                              <button class="clear_btn pink_btn" >CLEAR CART</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </thead>
+                    </table>
+                    </form>
+                    
+                  </div>
+                  <div class="checkOut_area">
+                    <div class="count_area">
+                      <table>
+                      <tbody>
+                        <tr>
+                          <th class="subtotal">Subtotal</th>
+                          <td class="subtotalPrice">$68.50</td>
+                        </tr>
+                        <tr>
+                          <th class="creditFee">Credit card</th>
+                          <td class="creditFeePrice">$1.20</td>
+                        </tr>
+                        <tr>
+                          <th class="surcharge">surcharge</th>
+                          <td class="surchargePrice">$0</td>
+                        </tr>
+                        <tr>
+                          <th class="total">Total</th>
+                          <td class="totalPrice">$69.70</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="btn_area">
+                      <button class="check_btn pink_btn">CHECK</button>
+                    </div>
+                    </div>
+                    <div class="announce_area">
+                      <p class="supportTxt">
+                         <strong>
+                           We are unable to accept pre-orders or dietary requests. For anything else please contact our team on <a href="#">03 8663 2000.</a>  
+                         </strong>  
+                      </p>
+                      <p class="noticeTxt">
+                          You must be over 18 years of age to order alcohol — proof of age will be required.
+                      </p>
+                      <p class="noticeTxt">
+                          Online orders attract a 1.75% surcharge.
+                      </p>
+                      <p class="noticeTxt">
+                          Public holidays incur a 15% service surcharge.
+                      </p>
+                  </div>
+                  </div>
+                </div>
+              
+            </section>
+            <section class="subscribe_section">
+            <div class="container">
+              <form action="">
+                <input type="text"  placeholder=" Join Our Mail-List"class= name="" id="" />
+                <button class="join_btn pinkBlack_btn neon-effectBoxShineOff_pink">JOIN</button>
+              </form>
+          </section>
+    </div>
+  <footer>
+    <div class="icon_zone">
+      <a href="#" class="pink_btn neon-effectTxt_pink" ><i class="fab fa-facebook-square"></i></a>
+      <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-instagram"></i></a>
+      <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-airbnb"></i></a>
+    </div>
+      
+    <div class="copyright_zone">
+      <div class="address">
+        <p>125 FLINDERS LANE, MELBOURNE VIC 3000 03 8663 2000
+        <br> EAT@HAVANACLUBNRESTAURANT.COM.AU</p>
+      </div>
+      <div class="copyright">
+         <p>Havana Club is brought to you by <a href="#">Lucas Restaurants</a> <a href="#">Terms & Conditions</a>  <a href="#">Privacy Policy</a> </p>
+      </div>
+    </div>
+    <div class="contact_zone">
+      <button class="pinkBlack_btn neon-effectBoxShineOff_pink">
+        CONTACT-US
+      </button>
+      <i class="fas fa-hand-pointer pink_btn neon-effectTxt_pink"></i>
+    </div>
+  </footer>
+    <script src="./havana.js"></script>
+</body>
+</html>
