@@ -22,9 +22,21 @@ $(document).ready(function(){
 const openBtn = document.querySelector('.openBtn')
 const sideMenu = document.querySelector('.side_menu')
       openBtn.addEventListener("click" ,function(){
-      sideMenu.className+=` side_menu_show`
-      })
-const closeBtn = document.querySelector(".close_btn")
-      closeBtn.addEventListener("click" ,function(){
+          if(openBtn.className === "openBtn open"){
+            //    openBtn.innerHTML=''
+            //     openBtn.innerHTML=`<i class="close_btn neon-effectTxt_pink fas fa-times">`
+            //     sideMenu.className+=` side_menu_show`
+            openBtn.innerHTML=''
+            openBtn.innerHTML=`<i class="fas fa-bars neon-effectTxt_blue">`
             sideMenu.classList.remove('side_menu_show')
-            })
+            openBtn.classList.remove('open')
+          }
+          else{
+            openBtn.classList.add('open')
+            openBtn.innerHTML=''
+            openBtn.innerHTML=`<i class="close_btn neon-effectTxt_pink fas fa-times">`
+            sideMenu.className+=` side_menu_show`
+          }
+     
+      })
+

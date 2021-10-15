@@ -156,7 +156,7 @@ p{
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 999;
   }
   header .icon{
     display: flex;
@@ -176,7 +176,7 @@ p{
   }
   header img{
     width: 150px;
-    height: 110px;
+    height: 100px;
     vertical-align: bottom;
     transform: rotate(-6deg);
     
@@ -190,22 +190,83 @@ p{
   /*nav */
   .side_menu{
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 90px);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     visibility: hidden;
-    opacity: 0;
+    /* opacity: 0; */
+    /* top: -100%; */
     position: fixed;
-    top: 90px;
     z-index: 5; 
-    background-color: #0a0a0a;
-    transition: visibility 0s linear 500ms, opacity 300ms;
+    transition: 0.3s;
+    /* background-color: #0a0a0a; */
+    /* transition: visibility 0s linear 500ms, opacity 300ms; */
   }
   .side_menu_show{
+    top: 90px;
     visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 300ms;
+  }
+  .side_menu .curtain1{
+    width: 33.333333%;
+    position: absolute;
+    top: calc(-100% - 90px);
+    left:0;
+    height: 100%;
+    background-color: #0a0a0a;
+    transition: 0.3s;
+  }
+ .side_menu_show .curtain1{
+    top: 0;
+    transition: 0.3s;
+  }
+  .side_menu  nav{
+    width: 33.333333%;
+    height: 100%;
+    display: flex;
+    background-color: #0a0a0a;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(-100% - 90px);
+    left:33.333333%;
+    transition: 0.3s;
+    transition-delay: 0.25s;
+  }
+  .side_menu_show nav{
+    top: 0;
+    transition: 0.3s;
+    transition-delay: 0.25s;
+    
+  }
+  .side_menu .curtain2{
+    width: 33.333333%;
+    position: absolute;
+    top: calc(-100% - 90px);
+    left:66.666666%;
+    height: 100%;
+    background-color: #0a0a0a;
+    transition: 0.3s;
+    transition-delay: 0.5s;
+
+  }
+  .side_menu_show .curtain2{
+    top: 0;
+    transition: 0.3s;
+    transition-delay: 0.5s;
+  }
+  .side_menu nav a{
+    font-family: 'Londrina Outline', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(237, 238, 243);
+    letter-spacing: 5px;
+    padding: 0;
+    margin: 0;
+  }
+  .side_menu_show{
+    top: 90px;
+    transition: 0.3s;
   }
   .side_menu a{
     text-decoration: none;
@@ -224,21 +285,7 @@ p{
     border: none;
     font-size: 45px;
   }
-  .side_menu nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-grow: 1;
-  }
-  .side_menu nav a{
-    font-family: 'Londrina Outline', cursive;
-    font-size: 60px;
-    font-weight: bolder;
-    color: rgb(237, 238, 243);
-    letter-spacing: 5px;
-    padding: 0;
-    margin: 0;
-  }
+
   /* banner_section */
   .banner_section{
     background-image:url(./picLibrary/ChinChin-4e.jpg);
@@ -286,23 +333,20 @@ p{
     justify-content: center;
     align-items: center;
   }
-  .menu_section img{
-    /* width: 900px;
-    height: 500px;
-  } */}
   .menu_section .container .menu_title{
     align-self: flex-start;
     position: relative;
-    top: 70px;
-    left: 100px;
+    top: 170px;
+    left: -30px;
     background-color: rgba(0, 0, 0, .6) ;
-    z-index: 1;
+    z-index: 2;
   }
   .menu_section .slider_zone .container{
     padding-top: 0;
+    position: relative;
   }
   .menu_section .slider_zone .container .owl-carousel{
-    position: relative;
+    min-height:700px ;
   }
   
   .menu_section .slider_zone .btn_arrow{
