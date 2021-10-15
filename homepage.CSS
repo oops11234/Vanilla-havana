@@ -20,10 +20,13 @@ p{
     color: seashell;
     font-size: 18px;
 }
+li{
+    list-style: none;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 40px 0;
 }
 
 /* button css setting */
@@ -337,18 +340,18 @@ p{
     align-self: flex-start;
     position: relative;
     top: 170px;
-    left: -30px;
+    left: 100px;
     background-color: rgba(0, 0, 0, .6) ;
     z-index: 2;
   }
   .menu_section .slider_zone .container{
+    max-width: 900px;
     padding-top: 0;
     position: relative;
   }
-  .menu_section .slider_zone .container .owl-carousel{
-    min-height:700px ;
+  .menu_section .slider_zone .container .owl-carousel img{
+    max-height: 600px;
   }
-  
   .menu_section .slider_zone .btn_arrow{
     border: none;
     color: rgb(227, 227, 235) ;
@@ -363,7 +366,6 @@ p{
     top: 50%;
   }
   .menu_section p{
-    width: 600px;
     background-color: rgba(0, 0, 0, .6);
     font-size:20px;
     position: absolute;

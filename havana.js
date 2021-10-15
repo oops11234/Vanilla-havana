@@ -2,14 +2,14 @@ $(document).ready(function(){
       $('.owl-carousel').owlCarousel({
             loop:true,
             margin:40,
-            nav:true,
+            
             navClass:['leftArrow btn_arrow pink_btn neon-effectTxt_pink ', ' rightArrow btn_arrow pink_btn neon-effectTxt_pink'],
             responsive:{
                 0:{
                     items:1
                 },
                 600:{
-                    items:3
+                    items:1
                 },
                 1000:{
                     items:1
