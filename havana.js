@@ -37,6 +37,8 @@ const sideMenu = document.querySelector('.side_menu')
             openBtn.innerHTML=`<i class="close_btn neon-effectTxt_pink fas fa-times">`
             sideMenu.className+=` side_menu_show`
           }
-     
       })
-
+      const loadPage = document.querySelector('.loadPage')
+      window.setTimeout(()=>{
+        loadPage.classList.add(`loadPageOff`)
+      },5000)
