@@ -1,8 +1,10 @@
 /* global setting */
 body{
-    background:#0a0a0a;
+    background:rgb(243, 239, 237);
     position: relative;
 }
+
+
 button{
     cursor: pointer;
 }
@@ -10,7 +12,8 @@ h2{
     font-family: 'Londrina Outline', cursive;
     font-size: 120px;
     /* color: rgba(228,201,227,1); */
-    color: rgb(237, 238, 243);
+    
+    /* color: black; */
     letter-spacing: 5px;
     padding: 0;
     margin: 0;
@@ -51,6 +54,7 @@ li{
     background-color: transparent;
     color:rgb(227, 227, 235);
     border: rgba(228,201,227,1) 3px solid;
+    transition: all 1s;
 }
 .pinkShine_btn:hover{
   text-shadow:
@@ -74,13 +78,15 @@ li{
     background-color: rgba(228,201,227,1);
 }
 .pinkBlackShine_btn{
-  padding:0 10px;
+    padding:0 10px;
     font-family: 'Londrina Outline', cursive;
+    color: #042104;
     font-size: 45px;
     font-weight: bolder;
     letter-spacing: 5px;
     border-radius: 20px;
     background-color: rgba(228,201,227,1);
+    animation: none;
 }
 .pinkBlackShine_btn:hover{
   box-shadow:
@@ -88,6 +94,7 @@ li{
   0 0 10px rgba(219,8,210, 1),
   0 0 20px rgba(219,8,210, 1),
   0 0 40px rgba(219,8,210, 1);
+  text-shadow: none;
   font-size: 45px;
 }
 /* neon effect */
@@ -99,7 +106,6 @@ li{
       0 0 40px rgba(219,8,210, 1);
     animation:neon-shine 10s cubic-bezier(1,0,1,-0.05)
       infinite;
-    
   }
   .neon-effectBox_pink{
     box-shadow:
@@ -122,13 +128,26 @@ li{
       font-size: 45px;
   }
   .neon-effectTxt_blue{
+    color: rgb(237, 238, 243);
     text-shadow:
       0 0 5px rgba(12, 168, 230,1),
       0 0 10px rgba(12, 168, 230,1),
       0 0 20px rgba(12, 168, 230,1),
       0 0 40px rgba(12, 168, 230,1);
-    animation:neon-shineTxt 10s cubic-bezier(1,0,1,-0.05)
+    animation:neon-shineTxt 10s cubic-bezier(1,0,1,-0.05) 1s
     infinite;
+    transition: all 3s;
+  }
+  .neon-effectTxt_dayIcon{
+    color: rgb(237, 238, 243);
+    text-shadow:
+      0 0 5px rgba(12, 168, 230,1),
+      0 0 10px rgba(12, 168, 230,1),
+      0 0 20px rgba(12, 168, 230,1),
+      0 0 40px rgba(12, 168, 230,1);
+    animation:neon-shineTxt 10s cubic-bezier(1,0,1,-0.05) 1s
+    infinite;
+    transition: all 3s;
   }
   @keyframes neon-shineTxt{
     0%{opacity:1;
@@ -352,13 +371,17 @@ li{
   }
 
   /* banner_section */
-  .banner_section{
-    background-image:url(./picLibrary/ChinChin-4e.jpg);
+  /* .banner_section{
+    /* background-image:url(./picLibrary/ChinChin-4e.jpg);
     background-size: cover;
+    object-fit:contain ;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, .4);
     background-blend-mode: multiply;
-  }
+    transition: all 3s; */
+  /* }  */
+  
+
   .banner_section .container{
     margin: 0 auto;
     display: flex;
@@ -366,6 +389,20 @@ li{
     align-items: center;
     justify-content: center;
 
+  }
+  .banner_section>.backImg{
+    background-image:url(./picLibrary/ChinChin-4e.jpg);
+    background-size: cover;
+    object-fit:contain ;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    background-blend-mode: multiply;
+    transition: all 3s;
+  }
+  .banner_section>.day_banner{
+    background-image:url(./picLibrary/pngtree-fresh-literary-summer-coffee-picture-image_914305.jpg);
+    background-blend-mode: normal;
+    object-fit:contain ;
   }
   .banner_section .logo_pic{
     width: 1200px;
@@ -385,26 +422,44 @@ li{
   }
 
   /* menu_section */
-  .menu_section{
-    background-image: url(./picLibrary/landing.jpg);
+  /* .menu_section{ */
+    /* background-image: url(./picLibrary/landing.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, .5);
-    background-blend-mode: multiply;
-  }
+    background-blend-mode: multiply; */
+  /* } */
   .menu_section .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .menu_section>.backImg{
+    background-image: url(./picLibrary/landing.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+    transition: all 2s;
+  }
+  .menu_section>.day_banner{
+    background-image: url(./picLibrary/doodles.png);
+    background-size: auto;
+    background-attachment: fixed;
+    background-blend-mode: normal;
+    transition: all 2s;
+  }
   .menu_section .container .menu_title{
     align-self: flex-start;
     position: relative;
-    top: 170px;
-    left: 100px;
+    top: 150px;
+    left: 80px;
     background-color: rgba(0, 0, 0, .6) ;
     z-index: 2;
+  }
+  .menu_section .container .day_title{
+    background-color: transparent;
   }
   .menu_section .slider_zone .container{
     max-width: 900px;
@@ -593,4 +648,11 @@ li{
     /* position: relative;
     top: 0;
     transition: top :-10px 1s linear ; */
+  }
+
+  .day_modelBlue{
+    text-shadow: none;
+    animation: none;
+    color:#042104 ;
+    transition:all 3s;
   }
