@@ -1,6 +1,6 @@
 /* global setting */
 body{
-    background:rgb(243, 239, 237);
+    background:#d7d9ff;
     position: relative;
 }
 
@@ -10,8 +10,8 @@ button{
 }
 h2{
     font-family: 'Londrina Outline', cursive;
-    font-size: 120px;
-    /* color: rgba(228,201,227,1); */
+     font-size: 120px;    
+     /* color: rgba(228,201,227,1); */
     
     /* color: black; */
     letter-spacing: 5px;
@@ -20,7 +20,8 @@ h2{
 }
 p{
     font-family: 'Montserrat', sans-serif;
-    color: seashell;
+    /* color: seashell; */
+    color: #05521e;
     font-size: 18px;
 }
 li{
@@ -29,7 +30,6 @@ li{
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 0;
 }
 
 /* button css setting */
@@ -106,6 +106,7 @@ li{
       0 0 40px rgba(219,8,210, 1);
     animation:neon-shine 10s cubic-bezier(1,0,1,-0.05)
       infinite;
+      transition: 3s;
   }
   .neon-effectBox_pink{
     box-shadow:
@@ -178,7 +179,7 @@ li{
     z-index: 11;
     background: #042104;
     animation: animateBg 10s linear infinite;
-    transition:3s;
+    transition:1s;
   }
   .loadPageOff{
     opacity: 0;
@@ -273,7 +274,7 @@ li{
 
   /*nav */
   .side_menu{
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 90px);
     display: flex;
     align-items: center;
@@ -453,7 +454,7 @@ li{
   .menu_section .container .menu_title{
     align-self: flex-start;
     position: relative;
-    top: 150px;
+    top:90px;
     left: 80px;
     background-color: rgba(0, 0, 0, .6) ;
     z-index: 2;
@@ -469,9 +470,19 @@ li{
   .menu_section .slider_zone .container .owl-carousel img{
     max-height: 600px;
   }
+  .menu_section .slider_zone .container .owl-carousel h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+    color: seashell;
+    background-color:rgba(0, 0, 0, .6) ;
+    position: absolute;
+    bottom: -20px;
+
+  }
   .menu_section .slider_zone .btn_arrow{
     border: none;
-    color: rgb(227, 227, 235) ;
+    
     font-size: 70px;
   }
   .menu_section .slider_zone .owl-nav{
@@ -482,29 +493,32 @@ li{
     position: absolute;
     top: 50%;
   }
-  .menu_section p{
+  /* .menu_section p{
     background-color: rgba(0, 0, 0, .6);
     font-size:20px;
     position: absolute;
     left: 0;
     bottom: -20px;
-  }
+  } */
   .menu_section .more_btn{
     align-self: flex-end;
     margin-bottom: 30px;
   }
 
   /* event_section */
-  .event_section{
+  .event_section>.backImg{
     background-image: url(./picLibrary/dj-background-image.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, .5);
     background-blend-mode: multiply;
   }
+  .event_section>.day_banner{
+    background-image: url(./picLibrary/scattered-forcefields.svg);
+    background-blend-mode: normal;
+    transition: all 2s;
+  }
   .event_section .container{
-    padding-top: 100px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-around;
   }
@@ -539,6 +553,7 @@ li{
   /* aboutUs_section */
  
   .aboutUs_section .container{
+    width: 100%;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -592,7 +607,7 @@ li{
   }
   .subscribe_area .join_btn{
     font-size: 40px;
-    border-radius: 10%
+    border-radius:0;
     
   }
   /* footer */
@@ -606,6 +621,7 @@ li{
   }
   footer .container{
     display: flex;
+    justify-content: space-evenly;
   }
   footer .icon_zone{
     width: 25%;
@@ -635,24 +651,33 @@ li{
     font-size: 14px;
   }
   footer .contact_zone{
-    width: 25%;
-    margin-top:50px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
   }
   footer .contact_zone i{
     margin-top: 20px;
     align-self: center;
-    border: none;
+    font-size: 42px;
+    color: seashell;
     /* position: relative;
     top: 0;
     transition: top :-10px 1s linear ; */
+  }
+  footer .contact_zone i:hover{
+    margin-top: 10px;
   }
 
   .day_modelBlue{
     text-shadow: none;
     animation: none;
-    color:#042104 ;
+    color:#05521e ;
     transition:all 3s;
+  }
+
+  @media screen and (max-width:768px) {
+    h2{
+       font-size: 20vw;
+    }
+    
   }
