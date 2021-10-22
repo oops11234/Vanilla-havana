@@ -27,6 +27,10 @@ p{
 li{
     list-style: none;
 }
+.wrap{
+  display: flex;
+  flex-direction: column;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;
@@ -173,8 +177,8 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     z-index: 11;
     background: #042104;
@@ -280,7 +284,7 @@ li{
     align-items: center;
     justify-content: center;
     visibility: hidden;
-    /* opacity: 0; */
+    opacity: 0;
     /* top: -100%; */
     position: fixed;
     z-index: 5; 
@@ -372,17 +376,18 @@ li{
   }
 
   /* banner_section */
-  /* .banner_section{
-    /* background-image:url(./picLibrary/ChinChin-4e.jpg);
-    background-size: cover;
-    object-fit:contain ;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, .4);
-    background-blend-mode: multiply;
-    transition: all 3s; */
-  /* }  */
+  .banner_section{
+    position: relative;
+  }
   
-
+  .banner_section >.night_video,.day_video{
+    position: absolute;
+     width: 100%;
+     z-index: -1;
+   }
+   .video_hide{
+     display: none;
+   }
   .banner_section .container{
     margin: 0 auto;
     display: flex;
@@ -391,20 +396,7 @@ li{
     justify-content: center;
 
   }
-  .banner_section>.backImg{
-    background-image:url(./picLibrary/ChinChin-4e.jpg);
-    background-size: cover;
-    object-fit:contain ;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, .4);
-    background-blend-mode: multiply;
-    transition: all 3s;
-  }
-  .banner_section>.day_banner{
-    background-image:url(./picLibrary/pngtree-fresh-literary-summer-coffee-picture-image_914305.jpg);
-    background-blend-mode: normal;
-    object-fit:contain ;
-  }
+  
   .banner_section .logo_pic{
     width: 1200px;
   }
@@ -482,7 +474,6 @@ li{
   }
   .menu_section .slider_zone .btn_arrow{
     border: none;
-    
     font-size: 70px;
   }
   .menu_section .slider_zone .owl-nav{
@@ -551,7 +542,25 @@ li{
   }
 
   /* aboutUs_section */
- 
+  .aboutUs_section{
+   position: relative;
+  }
+  .aboutUs_section>.backImg{
+    background-image:url(./picLibrary/ChinChin-4e.jpg);
+    background-size: cover;
+    object-fit:contain ;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, .4);
+    background-blend-mode: multiply;
+    transition: all 3s;
+  }
+  .aboutUs_section>.day_banner{
+    background-image:url(./picLibrary/pngtree-fresh-literary-summer-coffee-picture-image_914305.jpg);
+    background-blend-mode: normal;
+    object-fit:contain ;
+  }
+  
+
   .aboutUs_section .container{
     width: 100%;
     padding-top: 100px;
@@ -568,22 +577,43 @@ li{
     justify-content: center;
     overflow: hidden;
   }
+  
+  .aboutUs_section .slider_zone .owl-carousel{
+    position: relative;
+  }
+ 
+  .aboutUs_section .slider_zone .btn_arrow{
+    border: none;
+    font-size: 70px;
+  }
+  .aboutUs_section .slider_zone .container{
+    max-width:100%;
+    padding-top: 0;
+    position: relative;
+  }
+  .owl-stage-outer{
+    overflow: hidden;
+  }
+  .aboutUs_section .slider_zone .owl-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 40%;
+  }
   .aboutUs_section .slider_zone img{
     width: 400px;
     height: 300px;
     margin: 0 10px; 
   }
   .aboutUs_section .btn_zone{
-    width: 1200px;
+    width: 100%;
     margin: 20px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .aboutUs_section .btn_zone .btn_arrow{
-    border: none;
-    color: rgb(227, 227, 235) ;
-    font-size: 50px;
+    align-items: center;
+    justify-content: center;  
+  
   }
   /* subscribe_area */
   .subscribe_area form{
@@ -644,8 +674,11 @@ li{
   footer .copyright_zone .address p{
     font-size: 24px;
   }
-  footer .copyright_zone a{
+  footer .copyright_zone .hyText{
     color: seashell;
+  }
+  footer .copyright_zone .day_hyLink{
+    color:#05521e ;
   }
   footer .copyright_zone .copyright p{
     font-size: 14px;
@@ -674,7 +707,13 @@ li{
     color:#05521e ;
     transition:all 3s;
   }
-
+  .day_modelPink{
+    text-shadow: none;
+    animation: none;
+    color:#05521e ;
+    transition:all 3s;
+  }
+  
   @media screen and (max-width:768px) {
     h2{
        font-size: 20vw;

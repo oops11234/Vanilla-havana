@@ -4,7 +4,6 @@ $(document).ready(function(){
   const two = $("#two")
      one.owlCarousel({
             loop:true,
-            margin:40,
             navClass:['leftArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue', ' rightArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue'],
             responsive:{
                 0:{
@@ -20,11 +19,12 @@ $(document).ready(function(){
         });
       two.owlCarousel({
         loop:true,
-        margin:5,
         nav:true,
         autoWidth:true,
+        autoHeight:true,
         center:true,
         autoplay:true,
+        navClass:['leftArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue', ' rightArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue'],
         responsive:{
             0:{
                 items:1
@@ -43,12 +43,13 @@ const openBtn = document.querySelector('.openBtn')
 const sideMenu = document.querySelector('.side_menu')
       openBtn.addEventListener("click" ,function(){
           if(openBtn.className === "openBtn open"){
-            openBtn.innerHTML=''
             sideMenu.classList.remove('side_menu_show')
             openBtn.classList.remove('open')
             if(switchBtn.className === "switchBtn day"){
+              openBtn.innerHTML=''
                openBtn.innerHTML=`<i class="fas fa-bars neon-effectTxt_blue"> `
-            }else{
+            }else{ 
+              openBtn.innerHTML=''
               openBtn.innerHTML=`<i class="fas fa-bars neon-effectTxt_blue day_modelBlue"> `
             }
           }
@@ -58,7 +59,11 @@ const sideMenu = document.querySelector('.side_menu')
             openBtn.innerHTML=`<i class="fas fa-times">`
             sideMenu.className+=` side_menu_show`
             if(switchBtn.className === "switchBtn day"){
+              openBtn.innerHTML=''
               openBtn.innerHTML=`<i class="neon-effectTxt_pink fas fa-times">`
+            }else{
+              openBtn.innerHTML=''
+              openBtn.innerHTML=`<i class="neon-effectTxt_pink fas fa-times day_modelBlue"> `
             }
           }
       })
@@ -73,7 +78,7 @@ const switchBtn = document.querySelector(".switchBtn")
           webText.forEach(element => {
             element.style['color']="#05521e"
           });
-          document.body.style['background']="d7d9ff"
+          document.body.style['background']="#d7d9ff"
           
         }else{
           switchBtn.classList.add('day')
@@ -90,14 +95,15 @@ const clickBtn= document.querySelector('.switchBtn')
       clickBtn.addEventListener('click', nightMode)
 const dayBanner=document.querySelectorAll(".day_banner")
 const pinkBtn = document.querySelectorAll(".pinkBlackShine_btn")
-
-
+ const dayVideo = document.querySelector(".day_video")
+  const nightVideo = document.querySelector(".night_video")
 
 function nightMode(){
   const blueNeon=document.querySelectorAll(".neon-effectTxt_blue")
   const pinkNeon = document.querySelectorAll(".neon-effectTxt_pink")
-  const crossBtn = document.querySelector(".openBtn >i")
-
+ 
+      dayVideo.classList.toggle("video_hide")
+      nightVideo.classList.toggle("video_hide")
       document.querySelectorAll('.backImg').forEach(element => {
           element.classList.toggle("day_banner")
       })
@@ -109,16 +115,15 @@ function nightMode(){
       })
       pinkBtn.forEach(element => {
         element.classList.toggle("pinkBlackShine_btn")
-      },
-      crossBtn.classList.toggle("neon-effectTxt_pink")
+      }
       )}
 
 
 // loadPage
-const loadPage = document.querySelector('.loadPage')
-      window.setTimeout(()=>{
-        loadPage.classList.add(`loadPageOff`)
-      },500)
+// const loadPage = document.querySelector('.loadPage')
+//       window.setTimeout(()=>{
+//         loadPage.classList.add(`loadPageOff`)
+//       },500)
 
 
 
