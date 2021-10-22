@@ -1,44 +1,3 @@
-// slider
-$(document).ready(function(){
-  const one = $("#one")
-  const two = $("#two")
-     one.owlCarousel({
-            loop:true,
-            navClass:['leftArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue', ' rightArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue'],
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1200:{
-                    items:1
-                }
-            }
-        });
-      two.owlCarousel({
-        loop:true,
-        nav:true,
-        autoWidth:true,
-        autoHeight:true,
-        center:true,
-        autoplay:true,
-        navClass:['leftArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue', ' rightArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue'],
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1200:{
-                items:3
-            }
-        }
-    })
-    });
-// function Button
 const openBtn = document.querySelector('.openBtn')
 const sideMenu = document.querySelector('.side_menu')
       openBtn.addEventListener("click" ,function(){
@@ -104,8 +63,7 @@ function nightMode(){
   const blueNeon=document.querySelectorAll(".neon-effectTxt_blue")
   const pinkNeon = document.querySelectorAll(".neon-effectTxt_pink")
  
-      dayVideo.classList.toggle("video_hide")
-      nightVideo.classList.toggle("video_hide")
+      
       document.querySelectorAll('.backImg').forEach(element => {
           element.classList.toggle("day_banner")
       })
@@ -122,17 +80,3 @@ function nightMode(){
         element.classList.toggle("day_hyLink")
       })
     }
-
-
-// loadPage
-// const loadPage = document.querySelector('.loadPage')
-//       window.setTimeout(()=>{
-//         loadPage.classList.add(`loadPageOff`)
-//       },500)
-
-
-
-
-
-
-

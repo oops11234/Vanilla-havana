@@ -1,6 +1,6 @@
 /* global setting */
 body{
-    background:#d7d9ff;
+    background:#b64b9b;
     position: relative;
 }
 
@@ -32,7 +32,7 @@ li{
   flex-direction: column;
 }
 .container{
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -279,7 +279,7 @@ li{
   /*nav */
   .side_menu{
     width: 100vw;
-    height: calc(100vh - 90px);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,20 +288,22 @@ li{
     /* top: -100%; */
     position: fixed;
     z-index: 5; 
-    transition: 0.3s;
+    transition: 0.3s 0.5s;
     /* background-color: #0a0a0a; */
     /* transition: visibility 0s linear 500ms, opacity 300ms; */
   }
   .side_menu_show{
-    top: 90px;
+    height: 100vh;
     visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
   }
   .side_menu .curtain1{
     width: 33.333333%;
     position: absolute;
-    top: calc(-100% - 90px);
+    top: -100% ;
     left:0;
-    height: 100%;
+    height: 100vh;
     background-color: #0a0a0a;
     transition: 0.3s;
   }
@@ -311,13 +313,13 @@ li{
   }
   .side_menu  nav{
     width: 33.333333%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     background-color: #0a0a0a;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: calc(-100% - 90px);
+    top: -100%;
     left:33.333333%;
     transition: 0.3s;
     transition-delay: 0.25s;
@@ -331,9 +333,9 @@ li{
   .side_menu .curtain2{
     width: 33.333333%;
     position: absolute;
-    top: calc(-100% - 90px);
+    top: -100%;
     left:66.666666%;
-    height: 100%;
+    height: 100vh;
     background-color: #0a0a0a;
     transition: 0.3s;
     transition-delay: 0.5s;
