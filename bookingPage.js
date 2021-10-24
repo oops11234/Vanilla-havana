@@ -35,9 +35,9 @@ const switchBtn = document.querySelector(".switchBtn")
           switchBtn.innerHTML=`<i class="fas fa-moon neon-effectTxt_dayIcon"></i>`
           switchBtn.classList.remove('day')
           webText.forEach(element => {
-            element.style['color']="#05521e"
+            element.style['color']="#079133"
           });
-          document.body.style['background']="#c52c9f"
+          document.body.style['background']="hsl(315, 43%, 46%)"
           
         }else{
           switchBtn.classList.add('day')

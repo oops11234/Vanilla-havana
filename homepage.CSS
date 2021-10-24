@@ -1,6 +1,6 @@
 /* global setting */
 body{
-    background:#b64b9b;
+    background:hsl(315, 43%, 46%);
     position: relative;
 }
 
@@ -21,7 +21,7 @@ h2{
 p{
     font-family: 'Montserrat', sans-serif;
     /* color: seashell; */
-    color: #05521e;
+    color: #079133;
     font-size: 18px;
 }
 li{
@@ -680,7 +680,7 @@ li{
     color: seashell;
   }
   footer .copyright_zone .day_hyLink{
-    color:#05521e ;
+    color:#079133 ;
   }
   footer .copyright_zone .copyright p{
     font-size: 14px;
@@ -706,13 +706,13 @@ li{
   .day_modelBlue{
     text-shadow: none;
     animation: none;
-    color:#05521e ;
+    color:#079133 ;
     transition:all 3s;
   }
   .day_modelPink{
     text-shadow: none;
     animation: none;
-    color:#05521e ;
+    color:#079133 ;
     transition:all 3s;
   }
   
