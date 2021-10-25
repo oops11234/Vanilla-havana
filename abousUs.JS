@@ -79,7 +79,7 @@ const pinkBtn = document.querySelectorAll(".pinkBlackShine_btn")
 const hyperText = document.querySelectorAll(".hyText")
 const dayVideo = document.querySelector(".day_video")
 const nightVideo = document.querySelector(".night_video")
-const dayBlock = document.querySelectorAll(".logo_area")
+const dayBlock = document.querySelectorAll(".intro_area")
 
 function nightMode(){
   const blueNeon=document.querySelectorAll(".neon-effectTxt_blue")

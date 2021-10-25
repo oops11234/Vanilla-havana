@@ -359,61 +359,7 @@ header i {
     width: 300px;
     position: relative;
   }
-  .introduce_section .logo_area::before{ content:'';
-      width: 450px;
-      height: 270px;
-      background-image: url(./picLibrary/melbourne-victoria-australia-june-15-260nw-1931763005.webp);
-  
-      background-size: cover;
-      background-color: none;
-      background-blend-mode: none;
-      position: absolute;
-      bottom :-150px;
-      right: -250px;;
-      z-index: 0;
-    
-  }
-  .introduce_section .night_block::before{
-      content:'';
-      width: 450px;
-      height: 270px;
-      background-image: url(./picLibrary/3571036d-5576-4d5a-a0b7-1b7adc71a4fd.jpg);
-      background-attachment: fixed;
-      background-size: cover;
-      background-color: rgba(0, 0, 0, .8);
-      background-blend-mode: multiply;
-      position: absolute;
-      bottom :-150px;
-      right: -250px;;
-      z-index: 0;
-    }
-  .introduce_section .logo_area::after{
-      content:'';
-      width: 300px;
-      height: 300px;
-      background-image: url(./picLibrary/City_Skyline_Melbourne_City_Tram_7918a020-2dcf-40c3-b023-5d248b34ead9.jpg);
-      background-color: none;
-      background-blend-mode: none;
-      position: absolute;
-      top :-150px;
-      right: -1100px;;
-      z-index: 0;
-    }
-    
-    .introduce_section .night_block::after{
-      content:'';
-      width: 300px;
-      height: 300px;
-      background-image: url(./picLibrary/f2118492208f0b0b6a91992b5970ef91.jpg);
-      background-color: rgba(0, 0, 0, .3);
-      background-blend-mode: multiply;
-      position: absolute;
-      top :-150px;
-      right: -1100px;;
-      z-index: 0;
-    }
-
-  
+ 
   .introduce_section .logo_area img{
     width: 100%;
     position: relative;
@@ -422,12 +368,65 @@ header i {
     width: 60%;
     position: relative;
   }
+  .introduce_section .intro_area::before{ content:'';
+    width: 450px;
+    height: 270px;
+    background-image: url(./picLibrary/melbourne-victoria-australia-june-15-260nw-1931763005.webp);
+    background-size: cover;
+    background-color: none;
+    background-blend-mode: none;
+    position: absolute;
+    bottom :-150px;
+    left: -250px;
+    z-index: 0;
+  
+}
+.introduce_section .night_block::before{
+    content:'';
+    width: 450px;
+    height: 270px;
+    background-image: url(./picLibrary/3571036d-5576-4d5a-a0b7-1b7adc71a4fd.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .8);
+    background-blend-mode: multiply;
+    position: absolute;
+    bottom :-150px;
+    left: -250px;
+    z-index: 0;
+  }
+  .introduce_section .intro_area::after{
+    content:'';
+    width: 300px;
+    height: 300px;
+    background-image: url(./picLibrary/City_Skyline_Melbourne_City_Tram_7918a020-2dcf-40c3-b023-5d248b34ead9.jpg);
+    background-color: none;
+    background-blend-mode: none;
+    position: absolute;
+    top :-150px;
+    right: 0px;;
+    z-index: 0;
+  }
+  
+  .introduce_section .night_block::after{
+    content:'';
+    width: 300px;
+    height: 300px;
+    background-image: url(./picLibrary/f2118492208f0b0b6a91992b5970ef91.jpg);
+    background-color: rgba(0, 0, 0, .3);
+    background-blend-mode: multiply;
+    position: absolute;
+    top :-150px;
+    right: 0px;;
+    z-index: 0;
+  }
   .introduce_section .intro_area p{
     font-size: 20px;
     line-height: 24px;
     color: #079133;
     background-color: rgba(0, 0, 0, .6);
     position: relative;
+    z-index: 2;
   }
    /* subscribe_area */
    .subscribe_area form{
@@ -542,4 +541,386 @@ footer .contact_zone button{
   animation: none;
   color: #079133;
   transition: all 3s;
+}
+
+@media screen and (min-width:769px) and (max-width:1025px) {
+  .container {
+    max-width: 1024px;
+  }
+
+    /* side_menu */
+    .side_menu_show .curtain1 {
+      display: none;
+    }
+    .side_menu nav{
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .side_menu_show nav {
+      width: 100vw;
+      left: 0;
+      top: -1px;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 3;
+    }
+    .side_menu_show nav li {
+      margin: 20px 0;
+    }
+    .side_menu_show .curtain2 {
+      display: none;
+    }
+    /* booking_form */
+    .booking_form .container {
+      padding-top: 0;
+    }
+    .booking_form .container .pic {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+    .booking_form .container .pic img {
+      width: 100%;
+      height: auto;
+      filter: opacity(.9);
+    }
+    .booking_form .container .pic:nth-child(4) { 
+      display: none;
+    }
+    .booking_form .container .form_zone{
+      height: 80%;
+      top:-150px;
+    }
+
+   
+    
+  /* footer */
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+footer .contact_zone {
+    position: absolute;
+    right: 60px;
+    top: -80px;
+  }
+footer .contact_zone i{
+    position: absolute;
+    top: -20px;
+    animation: selfMoveMdLg 1s infinite;
+  }
+  @keyframes selfMoveMdLg {
+    0% {
+      right: -50px;
+    }
+    100% {
+      right: -40px;
+    }
+  }
+}
+@media screen and (min-width:415px) and (max-width:769px) {
+  .container {
+    max-width: 768px;
+  }
+  header .menu {
+    display: flex;
+  }
+  /* side_menu */
+  .side_menu_show .curtain1 {
+    display: none;
+  }
+  .side_menu nav{
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .side_menu_show nav {
+    width: 100vw;
+    left: 0;
+    top: -1px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+  }
+  .side_menu_show nav li {
+    margin: 20px 0;
+  }
+ 
+  .side_menu_show .curtain2 {
+    display: none;
+  }
+  /* booking_form */
+  .booking_form .container {
+    padding-top: 0;
+  }
+  .booking_form .container .pic_zone{
+    flex-direction: column;
+  }
+  .booking_form .container .pic:first-child {
+    display: none;
+  }
+  .booking_form .container .pic:nth-child(2) {
+    margin-left: -50px;
+    margin-bottom: -20px;
+  }
+  
+  .booking_form .container .pic:nth-child(3) {
+    margin-right: -25px;
+    margin-top: -50px;
+  }
+  
+  .booking_form .container .pic:nth-child(4) { 
+    margin-top: -25px;
+  }
+  .booking_form .container .pic {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .booking_form .container .pic img {
+    width: 100%;
+    height: auto;
+    filter: opacity(.9);
+  }
+  .booking_form .container .form_zone{
+    min-width: 410px;
+    height: 80%;
+    top:-100px;
+  }
+  .booking_form .container .form_zone .booking_btn{
+    width: 100%;
+    font-size: 5vw;
+  } 
+  /* footer */
+  footer{
+    width: 100%;
+  }
+  footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  footer .icon_zone{
+    justify-content: center;
+  }
+  footer .copyright_zone .address p {
+    display: none;
+  }
+  footer .contact_zone {
+    position: absolute;
+    right: 60px;
+    top: -80px;
+  }
+  footer .contact_zone i{
+    position: absolute;
+    top: -20px;
+    animation: selfMoveMd 1s infinite;
+  }
+  @keyframes selfMoveMd {
+    0% {
+      right: -50px;
+    }
+    100% {
+      right: -40px;
+    }
+  }
+ 
+}
+
+@media screen and (max-width:415px) {
+  .container {
+    min-width: 414px;
+  }
+
+  /* header */
+  header {
+    width: 100vw;
+    min-width: 414px;
+    padding: 0;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+  }
+
+  header i {
+    margin: 0 5px 0 0;
+    font-size: 36px;
+    color: rgba(237, 238, 243, 1)
+  }
+
+  header select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    color: seashell;
+    font-size: 18px;
+    padding: 3px;
+  }
+
+  header .icon {
+    margin-left: 5px;
+    margin-right: auto;
+  }
+
+  header .logo_area {
+    width: 135px;
+    min-width: 130px;
+  }
+
+  header .menu {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 5px;
+  }
+
+  /* side_menu */
+  .side_menu {
+    height: 100%;
+    
+  }
+
+  .side_menu_show .curtain1 {
+    display: none;
+  }
+  .side_menu nav {
+    width: 100vw;
+    min-width: 414px;
+    justify-content: flex-start;
+  }
+  .side_menu_show nav {
+    width: 100vw;
+    min-width: 414px;
+    top: -1px;
+    left: 0;
+    justify-content: flex-start;
+  }
+
+  .side_menu nav a {
+    text-decoration: underline;
+  }
+
+  .side_menu nav li {
+    margin: 20px 0;
+  }
+
+  .side_menu_show .curtain2 {
+    display: none;
+  }
+  
+  /* introduce_section */
+ .introduce_section>.backImg{
+  min-width: 414px;
+  }
+  .introduce_section .container .intro_zone{
+    padding:  0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .introduce_section .container .logo_area{
+    display: none;
+  }
+  .introduce_section .intro_area::before{ 
+    content:'';
+    width: 450px;
+    height: 270px;
+    background-image: url(./picLibrary/melbourne-victoria-australia-june-15-260nw-1931763005.webp);
+    background-size: cover;
+    background-color: none;
+    background-blend-mode: none;
+    position: absolute;
+    top :0px;
+    right: 0px;
+    z-index: 0;
+}
+.introduce_section .intro_area .night_block::before{
+  content:'';
+  width: 450px;
+  height: 270px;
+  background-image: url(./picLibrary/3571036d-5576-4d5a-a0b7-1b7adc71a4fd.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, .8);
+  background-blend-mode: multiply;
+  position: absolute;
+  top :0px;
+  right: 0px;
+  z-index: 0;
+}
+.introduce_section .logo_area::after{
+  content:'';
+  width: 300px;
+  height: 300px;
+  background-image: url(./picLibrary/City_Skyline_Melbourne_City_Tram_7918a020-2dcf-40c3-b023-5d248b34ead9.jpg);
+  background-color: none;
+  background-blend-mode: none;
+  position: absolute;
+  top :0px;
+  right: 0px;
+  z-index: 0;
+}
+
+.introduce_section .night_block::after{
+  content:'';
+  width: 300px;
+  height: 300px;
+  background-image: url(./picLibrary/f2118492208f0b0b6a91992b5970ef91.jpg);
+  background-color: rgba(0, 0, 0, .3);
+  background-blend-mode: multiply;
+  position: absolute;
+  top :0px;
+  right: 0px;
+  z-index: 0;
+}
+
+
+
+  /* footer */
+  footer {
+    width: 100vw;
+    border-top: none;
+    box-sizing: border-box;
+  }
+
+  footer .container {
+    display: block;
+  }
+
+  footer .icon_zone {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  footer .copyright_zone {
+    display: none;
+  }
+
+  footer .contact_zone {
+    max-width: 413px;
+  }
+
+  footer .contact_zone i {
+    margin-top: 20px;
+    font-size: 42px;
+    color: seashell;
+    transition: 0.5s;
+    position: absolute;
+    right: 50px;
+    top: -20px;
+    animation: selfMove 1s infinite;
+  }
+
+  @keyframes selfMove {
+    0% {
+      right: 50px;
+    }
+    100% {
+      right: 60px;
+    }
+  }
 }
