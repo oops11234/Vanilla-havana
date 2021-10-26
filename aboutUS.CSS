@@ -358,6 +358,7 @@ header i {
   .introduce_section .container .logo_area{
     width: 300px;
     position: relative;
+    z-index: 1;
   }
  
   .introduce_section .logo_area img{
@@ -367,11 +368,14 @@ header i {
   .introduce_section .intro_area{
     width: 60%;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
-  .introduce_section .intro_area::before{ content:'';
+  .introduce_section .intro_area::before{ 
+    content:'';
     width: 450px;
     height: 270px;
-    background-image: url(./picLibrary/melbourne-victoria-australia-june-15-260nw-1931763005.webp);
+    background-image: url(./picLibrary/Chinese-Cooking-Hacks.jpg);
     background-size: cover;
     background-color: none;
     background-blend-mode: none;
@@ -399,12 +403,12 @@ header i {
     content:'';
     width: 300px;
     height: 300px;
-    background-image: url(./picLibrary/City_Skyline_Melbourne_City_Tram_7918a020-2dcf-40c3-b023-5d248b34ead9.jpg);
+    background-image: url(./picLibrary/cooking-at-home.png);
     background-color: none;
     background-blend-mode: none;
     position: absolute;
     top :-150px;
-    right: 0px;;
+    right: 0px;
     z-index: 0;
   }
   
@@ -421,6 +425,9 @@ header i {
     z-index: 0;
   }
   .introduce_section .intro_area p{
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 24px;
     font-size: 20px;
     line-height: 24px;
     color: #079133;
@@ -430,11 +437,12 @@ header i {
   }
    /* subscribe_area */
    .subscribe_area form{
+     padding:20px ;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding:20px ;
+    background-color: rgba(0, 0, 0, .6);
   }
   .subscribe_area input{
     width: 400px;
@@ -529,6 +537,14 @@ footer .contact_zone button{
   align-items: center;
  
 }
+@keyframes pointerMove {
+  0% {
+    right: -50px;
+  }
+  100% {
+    right: -40px;
+  }
+}
 .day_modelBlue {
   text-shadow: none;
   animation: none;
@@ -570,30 +586,97 @@ footer .contact_zone button{
     .side_menu_show .curtain2 {
       display: none;
     }
-    /* booking_form */
-    .booking_form .container {
-      padding-top: 0;
+    /* .introduce_section */
+    .introduce_section .container .logo_area{
+      position: absolute;
+      left: 13%;
+      top: -20px;
     }
-    .booking_form .container .pic {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
+    .introduce_section .container .intro_zone{
+      padding-top: 50px;
+      padding: 40px 0;
+      display: flex;
+      flex-direction:column ;
+      justify-content: space-between;  
+      align-items: center;
+      position: relative;
     }
-    .booking_form .container .pic img {
-      width: 100%;
-      height: auto;
-      filter: opacity(.9);
+    .introduce_section .intro_area{
+      width: 80%;
     }
-    .booking_form .container .pic:nth-child(4) { 
+    .introduce_section .intro_area::before{
       display: none;
     }
-    .booking_form .container .form_zone{
-      height: 80%;
-      top:-150px;
+    .introduce_section .intro_area::after{
+      display: none;
     }
-
-   
-    
+    .introduce_section .intro_area p{
+      font-size: 2.5vw;
+      padding-bottom:10px;
+    }
+    .introduce_section .intro_area .txt_blockFirst{
+      padding-top:70px;
+      width: 50%;
+      align-self: flex-end;
+      position: relative;
+    } 
+    .introduce_section .intro_area .txt_blockSecond{
+      width: 50%;
+      position: relative;
+    }
+    .introduce_section .intro_area .txt_blockSecond::after{
+      content:'';
+      width: 100%;
+      height: 100%;
+      background-image: url(./picLibrary/cooking-at-home.png);
+      background-color: none;
+      background-blend-mode: none;
+      background-size: cover;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      right: -100%;
+    }
+    .introduce_section .night_block .txt_blockSecond::after{
+      content:'';
+      width: 100%;
+      height: 100%;
+      background-image: url(./picLibrary/f2118492208f0b0b6a91992b5970ef91.jpg);
+      background-color: rgba(0, 0, 0, .3);
+      background-blend-mode: multiply;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      right: -100%;
+    }
+    .introduce_section .intro_area .txt_blockThird{
+      width: 50%;
+      align-self: flex-end;
+      position: relative;
+    }
+    .introduce_section .intro_area .txt_blockThird::before{
+      content:'';
+      background-image: url(./picLibrary/Chinese-Cooking-Hacks.jpg);
+      background-size: cover;
+      background-color: none;
+      background-blend-mode: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -100%;
+    }
+    .introduce_section .night_block .txt_blockThird::before{
+      content:'';
+      background-image: url(./picLibrary/3571036d-5576-4d5a-a0b7-1b7adc71a4fd.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, .8);
+      background-blend-mode: multiply;
+      position: absolute;
+      width: 100%;
+      height: 285px;
+      left: -100%;
+    }
   /* footer */
 footer .container{
     display: flex;
@@ -650,48 +733,43 @@ footer .contact_zone i{
   .side_menu_show .curtain2 {
     display: none;
   }
-  /* booking_form */
-  .booking_form .container {
-    padding-top: 0;
+  /* .introduce_section */
+  .introduce_section .container .intro_zone{
+    padding: 0 0 70px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: 70px;
   }
-  .booking_form .container .pic_zone{
-    flex-direction: column;
+  .introduce_section .intro_area{
+    width: 80%;
   }
-  .booking_form .container .pic:first-child {
-    display: none;
-  }
-  .booking_form .container .pic:nth-child(2) {
-    margin-left: -50px;
-    margin-bottom: -20px;
-  }
-  
-  .booking_form .container .pic:nth-child(3) {
-    margin-right: -25px;
-    margin-top: -50px;
-  }
-  
-  .booking_form .container .pic:nth-child(4) { 
-    margin-top: -25px;
-  }
-  .booking_form .container .pic {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-  .booking_form .container .pic img {
-    width: 100%;
-    height: auto;
-    filter: opacity(.9);
-  }
-  .booking_form .container .form_zone{
-    min-width: 410px;
-    height: 80%;
-    top:-100px;
-  }
-  .booking_form .container .form_zone .booking_btn{
-    width: 100%;
-    font-size: 5vw;
-  } 
+  .introduce_section .intro_area::before{ 
+    top :-10px;
+    right: 0px;
+}
+.introduce_section .night_block::before{
+  top :-10px;
+  right: 0px;
+  z-index: 0;
+}
+.introduce_section .intro_area::after{
+  top :290px;
+  right: -20px;
+}
+
+.introduce_section .night_block::after{
+  top :270px;
+  right: 0px;
+}
+.subscribe_area form{
+  padding-bottom:100px ;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
   /* footer */
   footer{
     width: 100%;
@@ -818,65 +896,84 @@ footer .contact_zone i{
     padding:  0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
   }
   .introduce_section .container .logo_area{
     display: none;
   }
-  .introduce_section .intro_area::before{ 
+.introduce_section .intro_area{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+.introduce_section .intro_area p{
+    padding-bottom: 5px;
+  }
+.introduce_section .intro_area .txt_blockFirst {
+    width: 70%;
+    align-self: flex-end;
+    margin: 87px 0;
+
+  }
+.introduce_section .intro_area .txt_blockSecond{
+    width: 90%;
+    align-self: flex-start;
+    margin: 30px 0 30px;
+    
+  }
+  .introduce_section .intro_area .txt_blockThird{
+    width: 90%;
+    align-self: flex-end;
+    margin: 20px 0 60px;
+    position: relative;
+  }
+
+  .introduce_section .intro_area .txt_blockThird::after{
     content:'';
-    width: 450px;
-    height: 270px;
-    background-image: url(./picLibrary/melbourne-victoria-australia-june-15-260nw-1931763005.webp);
-    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background-image: url(./picLibrary/28Advice1-articleLarge.jpg);
     background-color: none;
     background-blend-mode: none;
     position: absolute;
-    top :0px;
-    right: 0px;
+    top :-40px;
+    left:-40px ;
     z-index: 0;
+  }
+  .introduce_section .night_block .txt_blockThird::after{
+    content:'';
+    width: 300px;
+    height: 300px;
+    background-image: url(./picLibrary/Old-streets-of-London.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .8);
+    background-blend-mode: multiply;
+    top :-40px;
+    left:-20px ;
+    z-index: 0;
+  }
+  
+.introduce_section .intro_area::before{ 
+    top :-10px;
+    right: 0px;
 }
-.introduce_section .intro_area .night_block::before{
-  content:'';
-  width: 450px;
-  height: 270px;
-  background-image: url(./picLibrary/3571036d-5576-4d5a-a0b7-1b7adc71a4fd.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, .8);
-  background-blend-mode: multiply;
-  position: absolute;
-  top :0px;
+.introduce_section .night_block::before{
+  top :-10px;
   right: 0px;
   z-index: 0;
 }
-.introduce_section .logo_area::after{
-  content:'';
-  width: 300px;
-  height: 300px;
-  background-image: url(./picLibrary/City_Skyline_Melbourne_City_Tram_7918a020-2dcf-40c3-b023-5d248b34ead9.jpg);
-  background-color: none;
-  background-blend-mode: none;
-  position: absolute;
-  top :0px;
+.introduce_section .intro_area::after{
+  top :290px;
   right: 0px;
-  z-index: 0;
 }
 
 .introduce_section .night_block::after{
-  content:'';
-  width: 300px;
-  height: 300px;
-  background-image: url(./picLibrary/f2118492208f0b0b6a91992b5970ef91.jpg);
-  background-color: rgba(0, 0, 0, .3);
-  background-blend-mode: multiply;
-  position: absolute;
-  top :0px;
+  top :270px;
   right: 0px;
-  z-index: 0;
 }
-
-
 
   /* footer */
   footer {
