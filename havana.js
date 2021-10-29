@@ -4,11 +4,16 @@ $(document).ready(function(){
   const two = $("#two")
      one.owlCarousel({
             loop:true,
+            // autoWidth:true,
+            autoHeight:true,
             navClass:['leftArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue', ' rightArrow btn_arrow pink_btn neon-effectTxt_pink day_modelBlue'],
             responsive:{
                 0:{
                     items:1
                 },
+                // 414:{
+                //     items:1
+                // },
                 768:{
                     items:1
                 },
