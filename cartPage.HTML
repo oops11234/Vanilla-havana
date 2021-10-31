@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./normalize.css/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat&display=swap"
       rel="stylesheet"
@@ -18,40 +18,52 @@
 </head>
 <body>
     <div class="wrap">
-        <nav>
-            <div class="icon">
-              <i class="fas fa-map-marker-alt neon-effectTxt_blue"></i>
-              <select name="location" id="location">
-                <option value="Sydney">Sydney</option>
-                <option value="Melbourne">Melbourne</option>
-              </select>
-            </div>
-            <div class="logo_area">
-              <img src="./picLibrary/havanaclubXL.png" alt="" />
-            </div>
-            <div class="menu">
-              <a href="#" class="openBtn"><i class="fas fa-bars neon-effectTxt_blue"></i
-                ></a>
-          </nav>
-          <div class="side_menu">
-            <div class="user_zone">
-              <a href="#" class="pink_btn neon-effectBox_pink  neon-effectTxt_pink">Sign Up</a>
-              <a href="#" class="pinkBlack_btn neon-effectBoxShineOff_pink">Sign In</a>
-              <a href="#" class="close_btn pink_btn neon-effectTxt_pink"><i class="fas fa-times"></i></a>
-            </div>
-            <div class="list">
-              <a href="./index.html" class="neon-effectTxt_blue">HOME</a>
-              <a href="./bookingPage.html" class="neon-effectTxt_blue">BOOKING</a>
-              <a href="./contactUs.HTML" class="neon-effectTxt_blue">CONTACT-US</a>
-              <a href="./menuPage.HTML" class="neon-effectTxt_blue">MENU</a>
-              <a href="#" class="neon-effectTxt_blue">WHAT'S ON</a>
-              <a href="./aboutUs.HTML" class="neon-effectTxt_blue">ABOUT-US</a>
-            </div>
-          </div>
-            <section class="cart_section">
+      <header>
+        <div class="icon">
+          <i class="fas fa-map-marker-alt neon-effectTxt_blue day_modelBlue"></i>
+          <select name="location" id="location">
+            <option value="Sydney">Sydney</option>
+            <option value="Melbourne">Melbourne</option>
+          </select>
+        </div>
+        <div class="logo_area">
+          <img src="./picLibrary/havanaclubXL.png" alt="" />
+        </div>
+        <div class="menu">
+          <a href="##" class='switchBtn'><i class="fas fa-moon neon-effectTxt_dayIcon"></i></a>
+          <a href="##" class="openBtn"><i class="neon-effectTxt_blue day_modelBlue fas fa-bars "></i
+            ></a>
+      </header>
+      <div class="side_menu">
+        <div class="curtain1"></div>
+        <nav class="list">
+          <ul>
+            <li>
+              <a href="./bookingPage.html" class="neon-effectTxt_blue day_modelBlue">BOOKING</a>
+            </li>
+            <li>
+              <a href="./preOrder.HTML" class="neon-effectTxt_blue day_modelBlue">PRE-ORDER</a>
+            </li>
+            <li>
+              <a href="./contactUs.HTML" class="neon-effectTxt_blue day_modelBlue">CONTACT-US</a>
+            </li>
+            <li>
+              <a href="./menuPage.HTML" class="neon-effectTxt_blue day_modelBlue">MENU</a>
+            </li>
+            <li>
+              <a href="#" class="neon-effectTxt_blue day_modelBlue">WHAT'S ON</a>
+            </li>
+            <li>
+              <a href="./aboutUs.HTML" class="neon-effectTxt_blue day_modelBlue">ABOUT-US</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="curtain2"></div>
+      </div>
+      <section class="cart_section">
               <div class="container">
-                <h1 class="neon-effectTxt_blue">My Cart</h1>
-                <a class=" moreItem_link pink_btn   neon-effectTxt_pink" href="./preOrder.HTML"> <i class="fas fa-arrow-left"></i> Add more Items</a>
+                <h2 class="neon-effectTxt_blue day_modelBlue">My Cart</h2>
+                <a class=" moreItem_link pink_btn   neon-effectTxt_pink day_modelBlue" href="./preOrder.HTML"> <i class="neon-effectTxt_blue day_modelBlue fas fa-arrow-left"></i> Add more Items</a>
                 <div class="order_area">
                   <div class="order_list">
                     <form action="">
@@ -139,39 +151,58 @@
                   </div>
                 </div>
               
-            </section>
-            <section class="subscribe_section">
-            <div class="container">
-              <form action="">
-                <input type="text"  placeholder=" Join Our Mail-List"class= name="" id="" />
-                <button class="join_btn pinkBlack_btn neon-effectBoxShineOff_pink">JOIN</button>
-              </form>
-          </section>
-    </div>
-  <footer>
-    <div class="icon_zone">
-      <a href="#" class="pink_btn neon-effectTxt_pink" ><i class="fab fa-facebook-square"></i></a>
-      <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-twitter-square"></i></a>
-      <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-instagram"></i></a>
-      <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-airbnb"></i></a>
-    </div>
-      
-    <div class="copyright_zone">
-      <div class="address">
-        <p>125 FLINDERS LANE, MELBOURNE VIC 3000 03 8663 2000
-        <br> EAT@HAVANACLUBNRESTAURANT.COM.AU</p>
-      </div>
-      <div class="copyright">
-         <p>Havana Club is brought to you by <a href="#">Lucas Restaurants</a> <a href="#">Terms & Conditions</a>  <a href="#">Privacy Policy</a> </p>
-      </div>
-    </div>
-    <div class="contact_zone">
-      <button class="pinkBlack_btn neon-effectBoxShineOff_pink">
-        CONTACT-US
-      </button>
-      <i class="fas fa-hand-pointer pink_btn neon-effectTxt_pink"></i>
-    </div>
-  </footer>
-    <script src="./havana.js"></script>
+      </section>
+      <section class="subscribe_area">
+        <form action="">
+          <input type="text"  placeholder=" Join Our Mail-List"class= name="" id="" />
+          <button class="join_btn pinkShine_btn pinkBlackShine_btn">JOIN</button>
+        </form>
+      </section>
+      <footer>
+        <section class="footer_zone">
+          <div class="container">
+            <div class="icon_zone">
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-airbnb"></i
+              ></a>
+            </div>
+
+            <div class="copyright_zone">
+              <div class="address">
+                <p>
+                  125 FLINDERS LANE, MELBOURNE VIC 3000 03 8663 2000 <br />
+                  EAT@HAVANACLUBNRESTAURANT.COM.AU
+                </p>
+              </div>
+              <div class="copyright">
+                <p>
+                  Havana Club is brought to you by
+                  <a href="#" class="hyText day_hyLink">Lucas Restaurants</a>
+                  <a href="#" class="hyText day_hyLink">Terms & Conditions</a>
+                  <a href="#" class="hyText day_hyLink">Privacy Policy</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact_zone">
+              <button class="pinkShine_btn pinkBlackShine_btn">
+                CONTACT-US
+              </button>
+              <i
+                class="fas fa-hand-point-left neon-effectTxt_pink day_modelBlue"
+              ></i>
+            </div>
+          </div>
+        </section>
+      </footer>
+    <script src="./cartPage.js"></script>
 </body>
 </html>
