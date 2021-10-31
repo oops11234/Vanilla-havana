@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./node_modules/normalize.css/" />
+    <link rel="stylesheet" href="./normalize.css/normalize.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./preOrder.CSS" />
     <script
       src="https://kit.fontawesome.com/8470264036.js"
@@ -17,428 +17,488 @@
     ></script>
   </head>
   <body>
-      <div class="wrap">
-        <nav>
+    <div class="wrap">
+        <header>
             <div class="icon">
-                <i class="fas fa-map-marker-alt neon-effectTxt_blue"></i>
-                <select name="location" id="location">
-                  <option value="Sydney">Sydney</option>
-                  <option value="Melbourne">Melbourne</option>
-                </select>
+              <i class="fas fa-map-marker-alt neon-effectTxt_blue day_modelBlue"></i>
+              <select name="location" id="location">
+                <option value="Sydney">Sydney</option>
+                <option value="Melbourne">Melbourne</option>
+              </select>
             </div>
-              <div class="logo_area">
-                <img src="./picLibrary/havanaclubXL.png" alt="" />
-              </div>
+            <div class="logo_area">
+              <img src="./picLibrary/havanaclubXL.png" alt="" />
+            </div>
             <div class="menu">
-                <a href="#" class="openBtn"><i class="fas fa-bars neon-effectTxt_blue"></i
-                    ></a>
-                <a href="./cartPage.HTML" class="cartBtn"><i class="fas fa-shopping-cart neon-effectTxt_blue"></i></a>
-        </nav>
-        <div class="side_menu">
-              <div class="user_zone">
-                <a href="#" class="pink_btn neon-effectBox_pink  neon-effectTxt_pink">Sign Up</a>
-                <a href="#" class="pinkBlack_btn neon-effectBoxShineOff_pink">Sign In</a>
-                <a href="#" class="close_btn pink_btn neon-effectTxt_pink"><i class="fas fa-times"></i></a>
-              </div>
-              <div class="list">
-                <a href="./index.html" class="neon-effectTxt_blue">HOME</a>
-                <a href="./bookingPage.html" class="neon-effectTxt_blue">BOOKING</a>
-                <a href="./contactUs.HTML" class="neon-effectTxt_blue">CONTACT-US</a>
-                <a href="./menuPage.HTML" class="neon-effectTxt_blue">MENU</a>
-                <a href="#" class="neon-effectTxt_blue">WHAT'S ON</a>
-                <a href="./aboutUs.HTML" class="neon-effectTxt_blue">ABOUT-US</a>
-              </div>
+              <a href="##" class='switchBtn'>
+                  <i class="fas fa-moon neon-effectTxt_dayIcon"></i>
+                </a>
+                <a href="./cartPage.HTML" class="cartBtn">
+                   <i class="fas fa-shopping-cart neon-effectTxt_blue day_modelBlue"></i>
+                 </a>
+              <a href="##" class="openBtn">
+                  <i class="neon-effectTxt_blue day_modelBlue fas fa-bars "></i>
+              </a>
+                <div class="toTop_btn">
+                  <a href="#">
+                    <i class="neon-effectTxt_blue day_modelBlue fas fa-arrow-up"></i>
+                  </a>
+                </div>
+          </header>
+            <div class="side_menu">
+                <div class="curtain1"></div>
+                <nav class="list">
+                <ul>
+                    <li>
+                    <a
+                        href="./bookingPage.html"
+                        class="neon-effectTxt_blue day_modelBlue"
+                        >BOOKING</a
+                    >
+                    </li>
+                    <li>
+                    <a
+                        href="./preOrder.HTML"
+                        class="neon-effectTxt_blue day_modelBlue"
+                        >PRE-ORDER</a
+                    >
+                    </li>
+                    <li>
+                    <a
+                        href="./contactUs.HTML"
+                        class="neon-effectTxt_blue day_modelBlue"
+                        >CONTACT-US</a
+                    >
+                    </li>
+                    <li>
+                    <a
+                        href="./menuPage.HTML"
+                        class="neon-effectTxt_blue day_modelBlue"
+                        >MENU</a
+                    >
+                    </li>
+                    <li>
+                    <a href="#" class="neon-effectTxt_blue day_modelBlue"
+                        >WHAT'S ON</a
+                    >
+                    </li>
+                    <li>
+                    <a href="./aboutUs.HTML" class="neon-effectTxt_blue day_modelBlue"
+                        >ABOUT-US</a
+                    >
+                    </li>
+                </ul>
+                </nav>
+        <div class="curtain2"></div>
+      </div>
+      <section class="banner_section">
+        <div class="container">
+          <div class="title">
+            <h2 class="neon-effectTxt_blue day_modelBlue">Find Out</h2>
+          </div>
+          <form class="searchArea">
+            <i class="fas fa-search pink_btn neon-effectTxt_pink day_modelBlue"></i>
+            <input type="search" placeholder="Desire Of You " />
+            <button
+              class="search_btn pinkShine_btn pinkBlackShine_btn"
+            >
+              Search
+            </button>
+          </form>
+          <div class="txt_area">
+            <p>
+              <a href="#"> ph:03 8663 2000</a>
+            </p>
+            <p>
+              <a href="#">125 FLINDERS LANE, MELBOURNE VIC</a>
+            </p>
+            <p>
+              <span>Order pickup or delivery from 4-9pm daily.</span>
+            </p>
+          </div>
         </div>
-        <section class='banner_section'>
-            <div class="container">
-                <div class="title">
-                    <h2 class="neon-effectTxt_blue">Find Out</h2>
-                </div>
-                <form class="searchArea">
-                <i class="fas fa-search pink_btn neon-effectTxt_pink "></i>
-                <input type="search" placeholder="Desire Of You "> 
-                <button class="search_btn pinkBlack_btn neon-effectBoxShineOff_pink" >Search</button>
-                </form>
-            <div class="txt_area">
-                <p> 
-                    <a href="#"> ph:03 8663 2000</a>
-                </p>  
-                <p>
-                    <a href="#">125 FLINDERS LANE, MELBOURNE VIC</a>
-                </p>
-                <p>
-                    <span>Order pickup or delivery from 4-9pm daily.</span>
-                </p>   
-                    
-               
-            </div>
-            </div>
-        </section>
-        <section class='catalog_section'>
-            <div class="container">
-            <ul>
-                <li>
-                    <a href="#">
-                    <h5>HEAT & EAT PIES X COOPERS BREWERY</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <h5>LITTLE SOMETHING</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                     <h5>DUMPLINGS</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <h5>STIR FRY, RICE & NOODLES</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>BARBECUE</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>CURRIES</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>GREENS & SALAD</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>ON THE SIDE</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>DESSERT</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>COCKTAILS</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>BEER</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>WHITE WINE</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>RED WINE</h5>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h5>SOFT DRINKS</h5>
-                    </a>
-                </li>
-            </ul>
+      </section>
+      <section class="catalog_section">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="#catalog1">
+                <h5>HEAT & EAT PIES X COOPERS BREWERY</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#catalog2">
+                <h5>LITTLE SOMETHING</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#catalog3">
+                <h5>DUMPLINGS</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#catalog4">
+                <h5>STIR FRY, RICE & NOODLES</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>BARBECUE</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>CURRIES</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>GREENS & SALAD</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>ON THE SIDE</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>DESSERT</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>COCKTAILS</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>BEER</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>WHITE WINE</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>RED WINE</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>SOFT DRINKS</h5>
+              </a>
+            </li>
+          </ul>
         </div>
-        </section>
-        <section class="menu_section">
-            <div class="container">
-                <div class="menu_area">
-                    <div class="catalog_zone">
-                        <h3 class="neon-effectTxt_blue">HEAT & EAT PIES X COOPERS BREWERY </h3>
-                        <ul>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>THAI PORK SAUSAGE ROLL</h5>
-                                    <p>w/ Chin Chin Sriracha Ketchup (4-Pack)</p>
-                                    <p class="price">$39.00</p>
-                                    <button class="add_btn">
-                                        Add Item
-                                    </button>
-                                    </div>
-                                    <div class="pic"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>BEEF RENDANG PIE</h5>
-                                    <p>w/ Chin Chin Sriracha Ketchup, Feeds 4-6 (900g)</p>
-                                    <p class="price">$39.00</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>BUTTER CHICKEN PIE</h5>
-                                    <p>w/ Chin Chin Sriracha Ketchup, Feeds 4-6 (900g)</p>
-                                    <p class="price">$39.00</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/chicken-wings-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>YELLOW CURRY VEGETABLE PIE</h5>
-                                    <p>w/ Chin Chin Sriracha Ketchup, Feeds 4-6 (900g)</p>
-                                    <p class="price">$39.00</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/chicken-wings-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+      </section>
+      <section class="menu_section">
+        <div class="container">
+          <div class="menu_area">
+            <div class="catalog_zone" id="catalog1">
+              <h3 class="neon-effectTxt_blue day_modelBlue">
+                HEAT & EAT PIES X COOPERS BREWERY
+              </h3>
+              <ul>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5 class="productName">THAI PORK SAUSAGE ROLL</h5>
+                      <p>w/ Chin Chin Sriracha Ketchup (4-Pack)</p>
+                      <p class="price">39.00</p>
+                      <button class="add_btn" data-product-id="1">Add Item</button>
                     </div>
-                    <div class="catalog_zone">
-                        <h3 class="neon-effectTxt_blue">LITTLE SOMETHING</h3>
-                        <ul>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>CHILLI SALT CHICKEN WINGS</h5>
-                                    <p>Sweet Fish Sauce & Lime</p>
-                                    <p class="price">$21.50</p>
-                                    <button class="add_btn">
-                                        Add Item
-                                    </button>
-                                    </div>
-                                    <div class="pic"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>VEGETARIAN CURRY PUFFS</h5>
-                                    <p>w. Cucumber Ajard & Gem Lettuce</p>
-                                    <p class="price">$22.50</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic"></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>BEEF MARTABAK SPRING ROLLS</h5>
-                                    <p>w. Cucumber Relish</p>
-                                    <p class="price">$19.50</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/chicken-wings-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="pic"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5 class="productName">BEEF RENDANG PIE</h5>
+                      <p>w/ Chin Chin Sriracha Ketchup, Feeds 4-6 (900g)</p>
+                      <p class="price">39.00</p>
+                      <button class="add_btn" data-product-id="2">Add Item</button>
                     </div>
-                    <div class="catalog_zone">
-                        <h3 class="neon-effectTxt_blue">DUMPLINGS</h3>
-                        <ul>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>PORK SHU MAI (4PCS)</h5>
-                                    <p>w. Black Vinegar</p>
-                                    <p class="price">$18.50</p>
-                                    <button class="add_btn">
-                                        Add Item
-                                    </button>
-                                    </div>
-                                    <div class="pic"></div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="pic"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5 class="productName">BUTTER CHICKEN PIE</h5>
+                      <p>w/ Chin Chin Sriracha Ketchup, Feeds 4-6 (900g)</p>
+                      <p class="price">39.00</p>
+                      <button class="add_btn" data-product-id="3">Add Item</button>
                     </div>
-                    <div class="catalog_zone">
-                        <h3 class="neon-effectTxt_blue">STIR FRY, RICE & NOODLES</h3>
-                        <ul>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>PAD SEUW OF BRAISED WAGYU BEEF</h5>
-                                    <p>Gai Laan, Rice Noodles & Crispy Shallots</p>
-                                    <p class="price">$30.50</p>
-                                    <button class="add_btn">
-                                        Add Item
-                                    </button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/cc-wagyu-beef-rice-noodles_640x640-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>STIR FRIED PRAWN</h5>
-                                    <p>w. Egg Noodle, Garlic Chive & Hellfire Chilli Oil</p>
-                                    <p class="price">$29.50</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/noodle-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>PAD THAI NOODLES</h5>
-                                    <p>Chicken, Peanuts, Dried Shrimp & Bean Sprouts</p>
-                                    <p class="price">$23.50</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/chicken-wings-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>CHICKEN & CHILLI JAM STIR FRY</h5>
-                                    <p>w. Snake Beans & Cashews</p>
-                                    <p class="price">$23.50</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/chicken-wings-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item">
-                                    <div class="txt">
-                                    <h5>EGG FRIED RICE</h5>
-                                    <p>w. Coriander and Chilli Soy</p>
-                                    <p class="price">$18.50</p>
-                                    <button class="add_btn">Add Item</button>
-                                    </div>
-                                    <div class="pic">
-                                        <img src="./picLibrary/chicken-wings-120x120.jpg" alt="">
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="pic">
+                      <img
+                        src="./picLibrary/chicken-wings-120x120.jpg"
+                        alt=""
+                      />
                     </div>
-                </div>
-                <div class="cart_zone">
-                    <div class="cart">
-                        <div class="title">
-                            <h3 class="neon-effectTxt_blue">MY ORDER</h3>
-                        </div>
-                        <div class="order_list">
-                            <ul>
-                                <li>
-                                    <div class="item">
-                                        <p class="item_name">
-                                            BUTTER CHICKEN PIE x 1</p>
-                                        <p class="price">
-                                            $39.00
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <p class="item_name">
-                                            HARGREAVES HILL PALE - 6 PACK x 2</p>
-                                        <p class="price">
-                                            $56.00
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <p class="item_name">
-                                            STIR FRIED PRAWN x 1</p>
-                                        <p class="price">
-                                            $$29.50
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item">
-                                        <p class="item_name">
-                                            TOTAL (INCL. SURCHARGES)</p>
-                                        <p class="price">
-                                            $96.66
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="btn_area">
-                            <button class="pink_btn"> VIEW CART</button>
-                            <button class="pinkBlack_btn"> CHECKOUT</button>
-                        </div>
-                        <div class="announce_area">
-                            <p class="supportTxt">
-                               <strong>
-                                 We are unable to accept pre-orders or dietary requests. For anything else please contact our team on <a href="#">03 8663 2000.</a>  
-                               </strong>  
-                            </p>
-                            <p class="noticeTxt">
-                                You must be over 18 years of age to order alcohol — proof of age will be required.
-                            </p>
-                            <p class="noticeTxt">
-                                Online orders attract a 1.75% surcharge.
-                            </p>
-                            <p class="noticeTxt">
-                                Public holidays incur a 15% service surcharge.
-                            </p>
-                        </div>
-                        
-
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5 class="productName">YELLOW CURRY VEGETABLE PIE</h5>
+                      <p>w/ Chin Chin Sriracha Ketchup, Feeds 4-6 (900g)</p>
+                      <p class="price">39.00</p>
+                      <button class="add_btn" data-product-id="4">Add Item</button>
                     </div>
-                </div>
+                    <div class="pic">
+                      <img
+                        src="./picLibrary/chicken-wings-120x120.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </section>
-        <footer>
-            <div class="icon_zone">
-              <a href="#" class="pink_btn neon-effectTxt_pink" ><i class="fab fa-facebook-square"></i></a>
-              <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-instagram"></i></a>
-              <a href="#"  class="pink_btn neon-effectTxt_pink"><i class="fab fa-airbnb"></i></a>
+            <div class="catalog_zone" id='catalog2'>
+              <h3 class="neon-effectTxt_blue day_modelBlue">LITTLE SOMETHING</h3>
+              <ul>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5 class="productName">CHILLI SALT CHICKEN WINGS</h5>
+                      <p>Sweet Fish Sauce & Lime</p>
+                      <p class="price">21.50</p>
+                      <button class="add_btn" data-product-id="5">Add Item</button>
+                    </div>
+                    <div class="pic"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5 class="productName">VEGETARIAN CURRY PUFFS</h5>
+                      <p>w. Cucumber Ajard & Gem Lettuce</p>
+                      <p class="price">22.50</p>
+                      <button class="add_btn" data-product-id="6">Add Item</button>
+                    </div>
+                    <div class="pic"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5 class="productName">BEEF MARTABAK SPRING ROLLS</h5>
+                      <p>w. Cucumber Relish</p>
+                      <p class="price">19.50</p>
+                      <button class="add_btn" data-product-id="7">Add Item</button>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="./picLibrary/chicken-wings-120x120.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+            <div class="catalog_zone" id="catalog3">
+              <h3 class="neon-effectTxt_blue day_modelBlue">DUMPLINGS</h3>
+              <ul>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5>PORK SHU MAI (4PCS)</h5>
+                      <p>w. Black Vinegar</p>
+                      <p class="price">$18.50</p>
+                      <button class="add_btn">Add Item</button>
+                    </div>
+                    <div class="pic"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog_zone" id='catalog4'>
+              <h3 class="neon-effectTxt_blue day_modelBlue">STIR FRY, RICE & NOODLES</h3>
+              <ul>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5>PAD SEUW OF BRAISED WAGYU BEEF</h5>
+                      <p>Gai Laan, Rice Noodles & Crispy Shallots</p>
+                      <p class="price">$30.50</p>
+                      <button class="add_btn">Add Item</button>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="./picLibrary/cc-wagyu-beef-rice-noodles_640x640-120x120.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5>STIR FRIED PRAWN</h5>
+                      <p>w. Egg Noodle, Garlic Chive & Hellfire Chilli Oil</p>
+                      <p class="price">$29.50</p>
+                      <button class="add_btn">Add Item</button>
+                    </div>
+                    <div class="pic">
+                      <img src="./picLibrary/noodle-120x120.jpg" alt="" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5>PAD THAI NOODLES</h5>
+                      <p>Chicken, Peanuts, Dried Shrimp & Bean Sprouts</p>
+                      <p class="price">$23.50</p>
+                      <button class="add_btn">Add Item</button>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="./picLibrary/chicken-wings-120x120.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5>CHICKEN & CHILLI JAM STIR FRY</h5>
+                      <p>w. Snake Beans & Cashews</p>
+                      <p class="price">$23.50</p>
+                      <button class="add_btn">Add Item</button>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="./picLibrary/chicken-wings-120x120.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <div class="txt">
+                      <h5>EGG FRIED RICE</h5>
+                      <p>w. Coriander and Chilli Soy</p>
+                      <p class="price">$18.50</p>
+                      <button class="add_btn">Add Item</button>
+                    </div>
+                    <div class="pic">
+                      <img
+                        src="./picLibrary/chicken-wings-120x120.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cart_zone">
+              <div class="cartBtn_area">
+                  <a href="##" class="cartShiftBtn">
+                    <i class="neon-effectTxt_blue day_modelBlue fas fa-arrow-left"></i>
+                  </a>
+              </div>
+            <div class="cart">
+              <div class="title">
+                <h3 class="neon-effectTxt_blue day_modelBlue">MY ORDER</h3>
+              </div>
               
+              </table>
+              <div class="order_list">
+               <table class="shop_table">
+                
+                  <tr class="total">
+                      <td>
+                          <h6>
+                            TOTAL (INCL. SURCHARGES)
+                          </h6>
+                          <span class="totalPrice">0</span>
+                      </td>
+                  </tr>
+               </table>
+              </div>
+              <div class="btn_area">
+                <button class="pink_btn">VIEW CART</button>
+                <button class="pinkBlack_btn">CHECKOUT</button>
+              </div>
+              <div class="announce_area">
+                <p class="supportTxt">
+                  <strong>
+                    We are unable to accept pre-orders or dietary requests. For
+                    anything else please contact our team on
+                    <a href="#">03 8663 2000.</a>
+                  </strong>
+                </p>
+                <p class="noticeTxt">
+                  You must be over 18 years of age to order alcohol — proof of
+                  age will be required.
+                </p>
+                <p class="noticeTxt">
+                  Online orders attract a 1.75% surcharge.
+                </p>
+                <p class="noticeTxt">
+                  Public holidays incur a 15% service surcharge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <section class="footer_zone">
+          <div class="container">
+            <div class="icon_zone">
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="pink_btn neon-effectTxt_pink day_modelBlue"
+                ><i class="fab fa-airbnb"></i
+              ></a>
+            </div>
+
             <div class="copyright_zone">
               <div class="address">
-                <p>125 FLINDERS LANE, MELBOURNE VIC 3000 
-                <br> 03 8663 2000
-                <br> EAT@HAVANACLUB-RESTAURANT.COM.AU</p>
+                <p>
+                  125 FLINDERS LANE, MELBOURNE VIC 3000 03 8663 2000 <br />
+                  EAT@HAVANACLUBNRESTAURANT.COM.AU
+                </p>
               </div>
               <div class="copyright">
-                 <p>Havana Club is brought to you by <a href="#">Lucas Restaurants</a> <a href="#">Terms & Conditions</a>  <a href="#">Privacy Policy</a> </p>
+                <p>
+                  Havana Club is brought to you by
+                  <a href="#" class="hyText day_hyLink">Lucas Restaurants</a>
+                  <a href="#" class="hyText day_hyLink">Terms & Conditions</a>
+                  <a href="#" class="hyText day_hyLink">Privacy Policy</a>
+                </p>
               </div>
             </div>
             <div class="contact_zone">
-              <button class="pinkBlack_btn neon-effectBoxShineOff_pink">
+              <button class="pinkShine_btn pinkBlackShine_btn">
                 CONTACT-US
               </button>
-              <i class="fas fa-hand-pointer pink_btn neon-effectTxt_pink"></i>
+              <i
+                class="fas fa-hand-point-left neon-effectTxt_pink day_modelBlue"
+              ></i>
             </div>
-          </footer>
-      </div>
-        
-      <script src="./havana.js"></script>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="./preOrder.js"></script>
   </body>
 </html>
