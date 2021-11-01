@@ -511,7 +511,7 @@ header .toTop_btn{
     display: flex;
     width: 100%;
     vertical-align: middle;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
   /* .menu_section .container .cart_zone .cart .order_list  tr:last-child{
     border-top: solid 1px  seashell;
@@ -522,6 +522,7 @@ header .toTop_btn{
     font-size: 18px;
     color: seashell;
     padding: 12px 0;
+    flex-grow: 1;
     
   }
   .menu_section .container .cart_zone .cart .order_list .priceTotal{
