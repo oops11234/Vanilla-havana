@@ -939,6 +939,9 @@ footer .contact_zone button{
   .banner_section{
     min-width: 414px;
   }
+  .banner_section h2{
+    font-size: 30vw;
+  }
   .banner_section .container{
     display: flex;
     flex-direction: column;
