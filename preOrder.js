@@ -96,30 +96,55 @@ function nightMode(){
 
 
     // cart unfinished
-    const tbl= document.querySelector("tbody")
-  function adder (a ,b ,c){
-    const lastItem= tbl.lastChild.previousSibling
-    let addItem= document.createElement(`tr`)
-    addItem.innerHTML=`<td>
-    <h6>${a}</h6>
-    <span>x</span>
-    <span class="qty">${b}</span>
-</td>
-<td class="priceTotal">
-${c}
-</td>`
-    tbl.insertBefore(addItem,lastItem);
-  }
+    // const tbl= document.querySelector("tbody")
+//   function adder (a ,b ,c){
+//     // const lastItem= tbl.lastChild.previousSibling
+//     let addItem= document.createElement(`tr`)
+//     addItem.innerHTML=`<td>
+//     <h6>${a}</h6>
+//     <span>x</span>
+//     <span class="qty">${b}</span>
+// </td>
+// <td class="priceTotal">
+// ${c}
+// </td>`
+//     tbl.insertBefore(addItem,lastItem);
+//   }
   
   let productsInCart = []
   const products = document.querySelectorAll('.item')
-  const totalPrice = document.querySelector('.totalPrice').innerHTML
+  const parentElement = document.querySelector('tbody')
+  const totalPrice = document.querySelector('.totalPrice')
   const countSumPrice = function(){
     let sumPrice= 0
     productsInCart.forEach(product=>{
       sumPrice+=product.price
     })
     return sumPrice
+  }
+  const updateShoppingCartHTML = function(){
+    if(productsInCart.length>0){
+    const lastItem= parentElement.lastChild.previousSibling
+     let result = productsInCart.map(product =>{
+        return`<tr>
+              <td>
+              <h6>${product.name}</h6>
+              <span>x</span>
+              <span class="qty">${product.count}</span>
+              </td>
+              <td class="priceTotal">${product.price}</td>
+              </tr>`
+      })
+      parentElement.innerHTML= result.join('')
+      totalPrice.innerHTML="$" + countSumPrice()
+    }else{
+      parentElement.innerHTML=` <tr>
+      <td>
+        <h6>your cart is empty</h6>
+      </td>
+    </tr>`
+    totalPrice.innerHTML=""
+    }
   }
   
   function updateProductsInCart(product){
@@ -146,11 +171,8 @@ ${c}
           basePrice:productPrice*1,
         }
         updateProductsInCart(productsToCart)
-        // updateShoppingCartHTML()
-        console.log(productsInCart)
-        
+        updateShoppingCartHTML()     
       } 
-      adder (productsInCart[0].name ,productsInCart[0].count,productsInCart[0].price)
     })
   } )
 

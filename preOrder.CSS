@@ -505,6 +505,7 @@ header .toTop_btn{
 }
 .menu_section .container .cart_zone .cart .order_list tr{
   display: flex;
+  justify-content: space-evenly;
 }
   .menu_section .container .cart_zone .cart .order_list td{
     display: flex;
@@ -512,9 +513,9 @@ header .toTop_btn{
     vertical-align: middle;
     justify-content: space-around;
   }
-  .menu_section .container .cart_zone .cart .order_list  tr:last-child{
+  /* .menu_section .container .cart_zone .cart .order_list  tr:last-child{
     border-top: solid 1px  seashell;
-  }
+  } */
   .menu_section .container .cart_zone .cart .order_list td h6{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -535,8 +536,19 @@ header .toTop_btn{
     font-size: 18px;
     color: seashell;
     padding: 12px 0;
-
   }
+  .menu_section .container .cart_zone .cart .count_area{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid seashell;
+  }
+  .menu_section .container .cart_zone .cart .count_area span{
+    font-family: 'Montserrat', sans-serif;
+    color: seashell;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+ 
   
   .menu_section .container .cart_zone .cart .btn_area{
     width: 100%;
@@ -881,7 +893,7 @@ footer .contact_zone button{
       font-family: 'Montserrat', sans-serif;
       color: seashell;
       font-size: 18px;
-      padding: 3px;
+      padding: 0px;
     }
   
     header .icon {
