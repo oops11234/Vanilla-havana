@@ -1,1 +1,1 @@
-## [DEMO](https://oops11234.github.io/JS-Carousell/)
+## [DEMO](https://oops11234.github.io/Vanilla-havana/)
